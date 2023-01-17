@@ -1,4 +1,5 @@
 import adapter from "@sveltejs/adapter-static";
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,6 +9,7 @@ const config = {
       base: process.env.NODE_ENV === "production" ? "/simple-language-cards" : "",
     },
   },
+  preprocess: vitePreprocess(),
 };
 
 export default config;

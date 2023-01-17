@@ -1,2 +1,6 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <h1>About</h1>
-<p>Reload this page</p>
+<a href="{base}/">Home</a>
